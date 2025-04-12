@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('https://www.transparenttextures.com/patterns/black-paper.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      color: rgb(226, 226, 226);
+      display: flex;
+    }
+
+    /* Sidebar styles */
+    .sidebar {
+      height: 100vh;
+      width: 220px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.9);
+      padding-top: 20px;
+    }
+
+    .sidebar a {
+      padding: 15px 20px;
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+      display: block;
+    }
+
+    .sidebar a:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Main content */
+    .main {
+      margin-left: 220px;
+      padding: 20px;
+      width: 100%;
+    }
+
+    .carousel {
+      text-align: center;
+      padding: 40px 20px;
+      text-shadow: 1px 1px 3px black;
+    }
+
+    .carousel img {
+      border-radius: 50%;
+      width: 150px;
+      border: 2px solid rgb(24, 23, 23);
+    }
+
+    .animated-name {
+      font-size: 36px;
+      font-weight: bold;
+      color: rgb(185, 181, 181);
+      background-color: rgb(26, 24, 24);
+      padding: 10px 20px;
+      border-radius: 10px;
+      display: inline-block;
+      animation: glow 2s ease-in-out infinite alternate;
+      text-shadow: 0 0 5px #1a1919;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 5px #181717;
+        transform: scale(1);
+      }
+      to {
+        text-shadow: 0 0 10px #1f1d1d;
+        transform: scale(1.05);
+      }
+    }
+
+    .section {
+      padding: 20px;
+    }
+
+    .card {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+      border-radius: 8px;
+    }
+
+    .title {
+      font-size: 24px;
+      margin-bottom: 15px;
+      text-align: center;
+      color: #00bcd4;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .col {
+      flex: 1;
+      padding: 10px;
+    }
+
+    .form-control, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #444;
+      border-radius: 4px;
+      background-color: #222;
+      color: white;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      background-color: #00bcd4;
+      color: black;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    .btn:hover {
+      background-color: #0097a7;
+    }
+
+    strong {
+      color: #f0f0f0;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .sidebar {
+        width: 100px;
+      }
+
+      .sidebar a {
+        font-size: 14px;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .main {
+        margin-left: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <a href="#about">About</a>
+    <a href="#educational-info">Education</a>
+    <a href="#prof-skill">Skills</a>
+    <a href="#certifications">Certifications</a>
+  </div>
+
+  <div class="main">
+    <div class="carousel">
+      <h1 class="animated-name">MAYA TRISHULINI AR</h1>
+      <h1 style="color: black; background-color">Python Developer-fresher</h1>
+
+    
+    </div>
+
+    <div class="section" id="about">
+      <div class="card">
+        <div class="row">
+          <div class="col">
+            <h4 class="title">About</h4>
+            <p>An enthusiastic and detail-oriented Computer Science postgraduate with a strong foundation in Python programming, data analytics, and software development principles. Eager to apply my skills in building efficient, scalable, and user-friendly applications. Looking to join a forward-thinking organization where I can contribute to real-world projects, learn from experienced developers, and grow as a Python Developer.</p>
+          </div>
+          <div class="col">
+            <h4 class="title">Basic Information</h4>
+            <p><strong>Age:</strong> 21</p>
+            <p><strong>Email:</strong> mayatrishulini@gmail.com</p>
+            <p><strong>Phone:</strong> 9361655536</p>
+            <p><strong>Address:</strong> Salem, India</p>
+            <p><strong>Language:</strong> English, Tamil</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="educational-info">
+      <div class="card">
+        <h4 class="title">Education</h4>
+        <h2>Master in Computer Science</h2>
+        <p><strong>PSG College of Arts and Science</strong></p>
+        <p><strong>Projects:</strong></p>
+        <ul>
+          <li>Developed a responsive web application using Flask and HTML/CSS.</li>
+          <li>Built a smart attendance system using face recognition (Flask)</li> 
+          <li>Developed an automated attendance tracking system to streamline and digitize the process of attendance monitoring, eliminating manual errors and saving time.
+            Enhanced security and reliability by leveraging deep learning algorithms, reducing the risk of proxy attendance and unauthorized access.
+            Implemented Convolutional Neural Networks (CNN) for accurate image classification.
+            Built a responsive and intuitive user interface using HTML, CSS, and JavaScript, enabling seamless interaction and accessibility for users.
+            Attendance will be stored in Excel (CSV).</li>
+      
+          <li><strong>Front end:</strong> HTML, CSS, and JavaScript</li>
+          <li><strong>Algorithm:</strong> CNN</li>
+          <li><strong>Visualization:</strong> Power BI</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section" id="prof-skill">
+      <div class="card">
+        <h4 class="title">Professional Skills</h4>
+        <p><strong>Programming Languages:</strong> Python, SQL</p>
+        <p><strong>Frameworks :</strong> NumPy, Pandas, Tensorflow
+        </p><strong>Tools:</strong>PowerBI,Docker
+        <p><strong>Internet Technologies:</strong> Flask, HTML5, CSS, JavaScript</p>
+      </div>
+    </div>
+
+    <div class="section" id="certifications">
+      <div class="card">
+        <h4 class="title">Certifications</h4>
+        <p><strong>Completed Fundamentals of Python at Udemy</strong></p>
+        <p><strong>Completed Data Structures Management with MySQL at Coursera</strong></p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
